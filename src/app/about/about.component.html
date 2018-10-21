@@ -1,0 +1,11 @@
+<p>
+  about works!
+</p>
+<button (click)="sendMeHome()">Go to Home</button>
+<ul>
+  <li class="life-container" *ngFor="let goal of goals; let i = index">
+    {{ goal }}
+  </li>
+</ul>
+<br> <br>
+<clock-component [time]="currentTime" (pauseResumeTime)="adjustedFromClock($event)"></clock-component>
